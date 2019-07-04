@@ -3,7 +3,8 @@
         <md-card>
             <md-card-media-cover md-solid>
                 <md-card-media md-ratio="4:3">
-                    <img :src=illusatration alt="Illustration pic">
+                    <img :src="require('@/assets/'+ illustration + '.png')" alt="Illustration pic">
+
                 </md-card-media>
 
                 <md-card-area>
@@ -23,8 +24,12 @@
         name: "ProjectCard",
         props: {
             title: String,
-            illusatration: String,
+            illustration: String,
             summary: String
+        },
+        data() {
+            return {
+            }
         }
     }
 </script>
@@ -43,6 +48,6 @@
 
     .md-card-enter {
         transform: translateY(-10px);
-        opacity: 0;
+        opacity: 10;
     }
 </style>
