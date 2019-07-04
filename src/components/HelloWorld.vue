@@ -10,22 +10,33 @@
     <ul>
       <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
     </ul>
-    <h3>Essential Links</h3>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank" rel="noopener">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li>
-      <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
-    </ul>
-    <h3>Ecosystem</h3>
-    <ul>
-      <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
-      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener">vue-devtools</a></li>
-      <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
-    </ul>
+
+
+      <div class="md-layout md-gutter md-alignment-center">
+          <div class="md-layout-item md-medium-size-33 md-small-size-50 md-xsmall-size-100">
+              <span>Always Show</span>
+          </div>
+
+          <div class="md-layout-item md-medium-size-33 md-small-size-50 md-xsmall-size-100">
+              <span>Always Show</span>
+          </div>
+
+          <div class="md-layout-item md-medium-size-33 md-small-size-50 md-xsmall-size-100">
+              <span>Always Show</span>
+          </div>
+
+          <div class="md-layout-item md-medium-size-50 md-small-size-50 md-xsmall-hide">
+              <span>Hide Xsmall</span>
+          </div>
+
+          <div class="md-layout-item md-medium-size-50 md-small-hide">
+              <span>Hide Small</span>
+          </div>
+
+          <div class="md-layout-item md-medium-hide">
+              <span>Hide Medium</span>
+          </div>
+      </div>
   </div>
 </template>
 
@@ -39,7 +50,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style scoped lang="scss">
 h3 {
   margin: 40px 0 0;
 }
@@ -53,5 +64,20 @@ li {
 }
 a {
   color: #42b983;
+}
+
+@import "~vue-material/dist/theme/engine";
+.md-layout-item {
+    height: 40px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+
+    span {
+        width: 100%;
+        height: 100%;
+        padding: 8px;
+        display: block;
+        background: md-get-palette-color(pink, 200);
+    }
 }
 </style>
