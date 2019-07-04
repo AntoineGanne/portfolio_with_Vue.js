@@ -3,6 +3,8 @@
     <img alt="Vue logo" src="../assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
     <ProjectCard title="Titre Stylax" illustration="logo" summary="sommaire" ></ProjectCard>
+    <ProjectCard title="PROJEEEEET" illustration="2euro" summary="Parceque c'est notre Projet!" ></ProjectCard>
+    <ProjectCard title="Pac-man" illustration="yugi" summary="pac-man AI revolutionnary" ></ProjectCard>
   </div>
 </template>
 
