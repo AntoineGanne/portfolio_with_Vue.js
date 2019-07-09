@@ -11,32 +11,6 @@
       <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
     </ul>
 
-
-      <div class="md-layout md-gutter md-alignment-center">
-          <div class="md-layout-item md-medium-size-33 md-small-size-50 md-xsmall-size-100">
-              <span>Always Show</span>
-          </div>
-
-          <div class="md-layout-item md-medium-size-33 md-small-size-50 md-xsmall-size-100">
-              <span>Always Show</span>
-          </div>
-
-          <div class="md-layout-item md-medium-size-33 md-small-size-50 md-xsmall-size-100">
-              <span>Always Show</span>
-          </div>
-
-          <div class="md-layout-item md-medium-size-50 md-small-size-50 md-xsmall-hide">
-              <span>Hide Xsmall</span>
-          </div>
-
-          <div class="md-layout-item md-medium-size-50 md-small-hide">
-              <span>Hide Small</span>
-          </div>
-
-          <div class="md-layout-item md-medium-hide">
-              <span>Hide Medium</span>
-          </div>
-      </div>
   </div>
 </template>
 

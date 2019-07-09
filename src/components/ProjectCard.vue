@@ -1,22 +1,26 @@
 <template>
-    <div>
-        <md-card>
-            <md-card-media-cover md-solid>
-                <md-card-media md-ratio="4:3">
-                    <img :src="require('@/assets/'+ illustration + '.png')" alt="Illustration pic">
 
-                </md-card-media>
+        <md-card :class="'md-elevation-'+elevation">
+            <div @mouseover="elevation=15"
+                 @mouseleave="elevation=2"
+            >
+                <md-card-media-cover md-solid>
+                    <md-card-media md-ratio="4:3">
+                        <img :src="require('@/assets/'+ illustration + '.png')" alt="Illustration pic">
 
-                <md-card-area>
-                    <md-card-header>
-                        <span class="md-title">{{title}}</span>
-                        <span class="md-subhead">{{summary}}</span>
-                    </md-card-header>
-                </md-card-area>
+                    </md-card-media>
 
-            </md-card-media-cover>
+                    <md-card-area>
+                        <md-card-header>
+                            <span class="md-title">{{title}}</span>
+                            <span class="md-subhead">{{summary}}</span>
+                        </md-card-header>
+                    </md-card-area>
+
+                </md-card-media-cover>
+            </div>
         </md-card>
-    </div>
+
 </template>
 
 <script>
@@ -29,18 +33,25 @@
         },
         data() {
             return {
+                elevation: 2
             }
+        },
+        methods: {
         }
     }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
     .md-card {
-        width: 320px;
+        width: 30%;
         margin: 4px;
         display: inline-block;
-        vertical-align: top;
     }
+
+    .md-card:hover{
+        width: 31%;
+    }
+
 
     .md-card-enter-active {
         transition: all .3s ease-in-out;
