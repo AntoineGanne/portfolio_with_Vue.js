@@ -1,0 +1,26 @@
+{
+  "Java": {
+    "A.I. Pac-man": {
+      "Illustration": "logo.png",
+      "Summary": "Q-learning implementation on the game Pac-Man",
+      "Code": "https://www.youtube.com/"
+    },
+    "Projet": {
+      "A.I. Pac-man": {
+        "Illustration": "2euro.png",
+        "Summary": "mdr lol",
+        "Code": "https://www.youtube.com/"
+      }
+    }
+},
+  "Javascript": {
+    "Vue.js Protfolio": {
+      "Illustration": "yugi.png",
+      "Summary": "this website is made with Vue.js",
+      "Code": "https://www.pornhub.com/"
+    }
+  },
+  "C#": {
+
+  }
+}

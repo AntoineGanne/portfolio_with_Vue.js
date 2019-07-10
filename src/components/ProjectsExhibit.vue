@@ -1,7 +1,12 @@
 <template>
 <div class="md-elevation-10 exhibit">
     <md-tabs>
-        <md-tab id="tab-Java" md-label="Java" to="" exact>
+        <div v-for="language in $options.jsonProjects">
+            <md-tab :id="language" :md-label="language">
+                hello
+            </md-tab>
+        </div>
+        <md-tab id="tab-Java" md-label="Java2" to="" exact>
             <ProjectCard title="Titre Stylax" illustration="logo" summary="sommaire" ></ProjectCard>
             <ProjectCard title="PROJEEEEET" illustration="2euro" summary="Parceque c'est notre Projet!" ></ProjectCard>
             <ProjectCard title="Pac-man" illustration="yugi" summary="pac-man AI revolutionnary" ></ProjectCard>
@@ -26,12 +31,14 @@
 
 <script>
     import ProjectCard from "@/components/ProjectCard";
+    import JSON_Projects from '@/json/projects.json';
 
     export default {
         name: "ProjectsExhibit",
         components:{
             ProjectCard
-        }
+        },
+        jsonProjects: JSON_Projects
     }
 </script>
 
@@ -39,6 +46,8 @@
     md-tab{
         width: inherit;
     }
+
+
 
     .exhibit{
         width: 90%;
