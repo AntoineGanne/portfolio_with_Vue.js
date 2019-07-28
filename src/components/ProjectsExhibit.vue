@@ -1,13 +1,15 @@
 <template>
 <div class="md-elevation-10 exhibit">
     <md-tabs>
+        <!--
         <div v-for="language in $options.jsonProjects">
             <md-tab :id="language" :md-label="language">
                 hello
             </md-tab>
         </div>
+        -->
         <md-tab id="tab-Java" md-label="Java2" to="" exact>
-            <ProjectCard title="Titre Stylax" illustration="logo" summary="sommaire" ></ProjectCard>
+            <ProjectCard title="Titre Stylax" illustration="logo" summary="@/summaries/pac-man.txt" ></ProjectCard>
             <ProjectCard title="PROJEEEEET" illustration="2euro" summary="Parceque c'est notre Projet!" ></ProjectCard>
             <ProjectCard title="Pac-man" illustration="yugi" summary="pac-man AI revolutionnary" ></ProjectCard>
         </md-tab>
